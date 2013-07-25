@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0FF8E217551A4000125BE6 /* MysqlStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0FF8E117551A4000125BE6 /* MysqlStatus.m */; };
+		0A21AA7017515CF300BEDCAA /* DBMDetailEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A21AA6F17515CF300BEDCAA /* DBMDetailEntry.m */; };
+		0A21B49017353FD200F755D0 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 0A21B48F17353FD200F755D0 /* TODO */; };
+		0A3B7353175BC505001D8C74 /* add_new_host.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B732F175BC505001D8C74 /* add_new_host.png */; };
+		0A3B7354175BC505001D8C74 /* add_pool.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7330175BC505001D8C74 /* add_pool.png */; };
+		0A3B7355175BC505001D8C74 /* aliases_set.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7331175BC505001D8C74 /* aliases_set.png */; };
+		0A3B7356175BC505001D8C74 /* config_completed_logview.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7332175BC505001D8C74 /* config_completed_logview.png */; };
+		0A3B7357175BC505001D8C74 /* Config_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7333175BC505001D8C74 /* Config_menu.png */; };
+		0A3B7358175BC505001D8C74 /* configuration.html in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7334175BC505001D8C74 /* configuration.html */; };
+		0A3B7359175BC505001D8C74 /* detail_selector.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7335175BC505001D8C74 /* detail_selector.png */; };
+		0A3B735A175BC505001D8C74 /* details_pane_with_data.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7336175BC505001D8C74 /* details_pane_with_data.png */; };
+		0A3B735B175BC505001D8C74 /* done_editing.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7337175BC505001D8C74 /* done_editing.png */; };
+		0A3B735C175BC505001D8C74 /* empty_config_pane.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7338175BC505001D8C74 /* empty_config_pane.png */; };
+		0A3B735D175BC505001D8C74 /* eventlog.html in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7339175BC505001D8C74 /* eventlog.html */; };
+		0A3B735E175BC505001D8C74 /* hostname_entered.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B733A175BC505001D8C74 /* hostname_entered.png */; };
+		0A3B735F175BC505001D8C74 /* hosts_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B733B175BC505001D8C74 /* hosts_active.png */; };
+		0A3B7360175BC505001D8C74 /* hosts_entered.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B733C175BC505001D8C74 /* hosts_entered.png */; };
+		0A3B7361175BC505001D8C74 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B733D175BC505001D8C74 /* index.html */; };
+		0A3B7362175BC505001D8C74 /* information_entered.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B733E175BC505001D8C74 /* information_entered.png */; };
+		0A3B7363175BC505001D8C74 /* kill_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B733F175BC505001D8C74 /* kill_button.png */; };
+		0A3B7364175BC505001D8C74 /* kill_confirm.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7340175BC505001D8C74 /* kill_confirm.png */; };
+		0A3B7365175BC505001D8C74 /* log_entries_colors.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7341175BC505001D8C74 /* log_entries_colors.png */; };
+		0A3B7366175BC505001D8C74 /* log_view_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7342175BC505001D8C74 /* log_view_selected.png */; };
+		0A3B7367175BC505001D8C74 /* new_file.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7343175BC505001D8C74 /* new_file.png */; };
+		0A3B7368175BC505001D8C74 /* new_pool_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7344175BC505001D8C74 /* new_pool_selected.png */; };
+		0A3B7369175BC505001D8C74 /* password_wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7345175BC505001D8C74 /* password_wrong.png */; };
+		0A3B736A175BC505001D8C74 /* primary_event_log.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7346175BC505001D8C74 /* primary_event_log.png */; };
+		0A3B736B175BC505001D8C74 /* replication_view.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7347175BC505001D8C74 /* replication_view.png */; };
+		0A3B736C175BC505001D8C74 /* save_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7348175BC505001D8C74 /* save_screen.png */; };
+		0A3B736D175BC505001D8C74 /* select_status_view.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7349175BC505001D8C74 /* select_status_view.png */; };
+		0A3B736E175BC505001D8C74 /* selector_open.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B734A175BC505001D8C74 /* selector_open.png */; };
+		0A3B736F175BC505001D8C74 /* single_status_view_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B734B175BC505001D8C74 /* single_status_view_line.png */; };
+		0A3B7370175BC505001D8C74 /* slaves_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B734C175BC505001D8C74 /* slaves_active.png */; };
+		0A3B7371175BC505001D8C74 /* startup.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B734D175BC505001D8C74 /* startup.png */; };
+		0A3B7372175BC505001D8C74 /* status_view_screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B734E175BC505001D8C74 /* status_view_screenshot.png */; };
+		0A3B7373175BC505001D8C74 /* statusview.html in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B734F175BC505001D8C74 /* statusview.html */; };
+		0A3B7374175BC505001D8C74 /* track_queries_forever.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7350175BC505001D8C74 /* track_queries_forever.png */; };
+		0A3B7375175BC505001D8C74 /* track_query_timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7351175BC505001D8C74 /* track_query_timer.png */; };
+		0A3B7376175BC505001D8C74 /* tracker_config.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B7352175BC505001D8C74 /* tracker_config.png */; };
+		0A5840741713230B002B31E1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5840731713230B002B31E1 /* Cocoa.framework */; };
+		0A58407E1713230B002B31E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A58407C1713230B002B31E1 /* InfoPlist.strings */; };
+		0A5840801713230B002B31E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A58407F1713230B002B31E1 /* main.m */; };
+		0A5840841713230B002B31E1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0A5840821713230B002B31E1 /* Credits.rtf */; };
+		0A5840871713230B002B31E1 /* DBMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5840861713230B002B31E1 /* DBMDocument.m */; };
+		0A58408A1713230B002B31E1 /* DBMDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5840881713230B002B31E1 /* DBMDocument.xib */; };
+		0A58408D1713230B002B31E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A58408B1713230B002B31E1 /* MainMenu.xib */; };
+		0A5840901713230B002B31E1 /* DBMDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A58408E1713230B002B31E1 /* DBMDocument.xcdatamodeld */; };
+		0A5841091713238C002B31E1 /* search.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0A5841081713238C002B31E1 /* search.icns */; };
+		0A66D00017359F0D00F0DC46 /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9C181517359CA100C04875 /* libmysqlclient.a */; };
+		0A702C76172CB3F700CC9C82 /* DBMLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A702C75172CB3F700CC9C82 /* DBMLogEntry.m */; };
+		0A841B3F173C810F00220AE6 /* MySQLHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A841B3E173C810F00220AE6 /* MySQLHost.m */; };
+		0A841B42173C810F00220AE6 /* Pool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A841B41173C810F00220AE6 /* Pool.m */; };
+		0A841B481740704800220AE6 /* MysqlKill.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A841B471740704800220AE6 /* MysqlKill.m */; };
+		0A90C5291737297300AFFFEE /* MysqlSlaveStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A90C5281737297300AFFFEE /* MysqlSlaveStatus.m */; };
+		0A9C182D17359CA100C04875 /* MysqlCommitException.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C17C517359CA100C04875 /* MysqlCommitException.m */; };
+		0A9C182E17359CA100C04875 /* MysqlException.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C17C717359CA100C04875 /* MysqlException.m */; };
+		0A9C182F17359CA100C04875 /* MysqlRollbackException.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C17C917359CA100C04875 /* MysqlRollbackException.m */; };
+		0A9C183217359CA100C04875 /* MysqlConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C181717359CA100C04875 /* MysqlConnection.m */; };
+		0A9C183317359CA100C04875 /* MysqlDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C181917359CA100C04875 /* MysqlDelete.m */; };
+		0A9C183417359CA100C04875 /* MysqlFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C181B17359CA100C04875 /* MysqlFetch.m */; };
+		0A9C183517359CA100C04875 /* MysqlFetchField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C181D17359CA100C04875 /* MysqlFetchField.m */; };
+		0A9C183617359CA100C04875 /* MysqlIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C181F17359CA100C04875 /* MysqlIndex.m */; };
+		0A9C183717359CA100C04875 /* MysqlInsert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C182117359CA100C04875 /* MysqlInsert.m */; };
+		0A9C183817359CA100C04875 /* MysqlLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C182317359CA100C04875 /* MysqlLiteral.m */; };
+		0A9C183917359CA100C04875 /* MysqlServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C182517359CA100C04875 /* MysqlServer.m */; };
+		0A9C183A17359CA100C04875 /* MysqlTruncate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C182717359CA100C04875 /* MysqlTruncate.m */; };
+		0A9C183B17359CA100C04875 /* MysqlUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C182917359CA100C04875 /* MysqlUpdate.m */; };
+		0A9C183D17359CA100C04875 /* NSString+MysqlEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C182C17359CA100C04875 /* NSString+MysqlEscape.m */; };
+		0AD9E5D21759182800AF0E5A /* General.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD9E5D11759182800AF0E5A /* General.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A0FF8E017551A4000125BE6 /* MysqlStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlStatus.h; sourceTree = "<group>"; };
+		0A0FF8E117551A4000125BE6 /* MysqlStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlStatus.m; sourceTree = "<group>"; };
+		0A21AA6E17515CF300BEDCAA /* DBMDetailEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMDetailEntry.h; sourceTree = "<group>"; };
+		0A21AA6F17515CF300BEDCAA /* DBMDetailEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMDetailEntry.m; sourceTree = "<group>"; };
+		0A21B48F17353FD200F755D0 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		0A3B732F175BC505001D8C74 /* add_new_host.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_new_host.png; sourceTree = "<group>"; };
+		0A3B7330175BC505001D8C74 /* add_pool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_pool.png; sourceTree = "<group>"; };
+		0A3B7331175BC505001D8C74 /* aliases_set.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aliases_set.png; sourceTree = "<group>"; };
+		0A3B7332175BC505001D8C74 /* config_completed_logview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_completed_logview.png; sourceTree = "<group>"; };
+		0A3B7333175BC505001D8C74 /* Config_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Config_menu.png; sourceTree = "<group>"; };
+		0A3B7334175BC505001D8C74 /* configuration.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = configuration.html; sourceTree = "<group>"; };
+		0A3B7335175BC505001D8C74 /* detail_selector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail_selector.png; sourceTree = "<group>"; };
+		0A3B7336175BC505001D8C74 /* details_pane_with_data.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = details_pane_with_data.png; sourceTree = "<group>"; };
+		0A3B7337175BC505001D8C74 /* done_editing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = done_editing.png; sourceTree = "<group>"; };
+		0A3B7338175BC505001D8C74 /* empty_config_pane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_config_pane.png; sourceTree = "<group>"; };
+		0A3B7339175BC505001D8C74 /* eventlog.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = eventlog.html; sourceTree = "<group>"; };
+		0A3B733A175BC505001D8C74 /* hostname_entered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hostname_entered.png; sourceTree = "<group>"; };
+		0A3B733B175BC505001D8C74 /* hosts_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hosts_active.png; sourceTree = "<group>"; };
+		0A3B733C175BC505001D8C74 /* hosts_entered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hosts_entered.png; sourceTree = "<group>"; };
+		0A3B733D175BC505001D8C74 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		0A3B733E175BC505001D8C74 /* information_entered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information_entered.png; sourceTree = "<group>"; };
+		0A3B733F175BC505001D8C74 /* kill_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kill_button.png; sourceTree = "<group>"; };
+		0A3B7340175BC505001D8C74 /* kill_confirm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kill_confirm.png; sourceTree = "<group>"; };
+		0A3B7341175BC505001D8C74 /* log_entries_colors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = log_entries_colors.png; sourceTree = "<group>"; };
+		0A3B7342175BC505001D8C74 /* log_view_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = log_view_selected.png; sourceTree = "<group>"; };
+		0A3B7343175BC505001D8C74 /* new_file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_file.png; sourceTree = "<group>"; };
+		0A3B7344175BC505001D8C74 /* new_pool_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_pool_selected.png; sourceTree = "<group>"; };
+		0A3B7345175BC505001D8C74 /* password_wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password_wrong.png; sourceTree = "<group>"; };
+		0A3B7346175BC505001D8C74 /* primary_event_log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = primary_event_log.png; sourceTree = "<group>"; };
+		0A3B7347175BC505001D8C74 /* replication_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = replication_view.png; sourceTree = "<group>"; };
+		0A3B7348175BC505001D8C74 /* save_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save_screen.png; sourceTree = "<group>"; };
+		0A3B7349175BC505001D8C74 /* select_status_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_status_view.png; sourceTree = "<group>"; };
+		0A3B734A175BC505001D8C74 /* selector_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selector_open.png; sourceTree = "<group>"; };
+		0A3B734B175BC505001D8C74 /* single_status_view_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = single_status_view_line.png; sourceTree = "<group>"; };
+		0A3B734C175BC505001D8C74 /* slaves_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slaves_active.png; sourceTree = "<group>"; };
+		0A3B734D175BC505001D8C74 /* startup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startup.png; sourceTree = "<group>"; };
+		0A3B734E175BC505001D8C74 /* status_view_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_view_screenshot.png; sourceTree = "<group>"; };
+		0A3B734F175BC505001D8C74 /* statusview.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = statusview.html; sourceTree = "<group>"; };
+		0A3B7350175BC505001D8C74 /* track_queries_forever.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = track_queries_forever.png; sourceTree = "<group>"; };
+		0A3B7351175BC505001D8C74 /* track_query_timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = track_query_timer.png; sourceTree = "<group>"; };
+		0A3B7352175BC505001D8C74 /* tracker_config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tracker_config.png; sourceTree = "<group>"; };
+		0A3B7377175BC619001D8C74 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0A5840701713230B002B31E1 /* DB Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DB Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5840731713230B002B31E1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0A5840761713230B002B31E1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0A5840771713230B002B31E1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0A5840781713230B002B31E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A58407B1713230B002B31E1 /* DB Monitor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DB Monitor-Info.plist"; sourceTree = "<group>"; };
+		0A58407D1713230B002B31E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A58407F1713230B002B31E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A5840811713230B002B31E1 /* DB Monitor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DB Monitor-Prefix.pch"; sourceTree = "<group>"; };
+		0A5840831713230B002B31E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0A5840851713230B002B31E1 /* DBMDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBMDocument.h; sourceTree = "<group>"; };
+		0A5840861713230B002B31E1 /* DBMDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBMDocument.m; sourceTree = "<group>"; };
+		0A5840891713230B002B31E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DBMDocument.xib; sourceTree = "<group>"; };
+		0A58408C1713230B002B31E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0A58408F1713230B002B31E1 /* DBMDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DBMDocument.xcdatamodel; sourceTree = "<group>"; };
+		0A5841081713238C002B31E1 /* search.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = search.icns; path = ../search.icns; sourceTree = "<group>"; };
+		0A58410A17132414002B31E1 /* DB Monitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "DB Monitor.entitlements"; sourceTree = "<group>"; };
+		0A702C74172CB3F700CC9C82 /* DBMLogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMLogEntry.h; sourceTree = "<group>"; };
+		0A702C75172CB3F700CC9C82 /* DBMLogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMLogEntry.m; sourceTree = "<group>"; };
+		0A841B3D173C810F00220AE6 /* MySQLHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQLHost.h; sourceTree = "<group>"; };
+		0A841B3E173C810F00220AE6 /* MySQLHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySQLHost.m; sourceTree = "<group>"; };
+		0A841B40173C810F00220AE6 /* Pool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pool.h; sourceTree = "<group>"; };
+		0A841B41173C810F00220AE6 /* Pool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pool.m; sourceTree = "<group>"; };
+		0A841B461740704800220AE6 /* MysqlKill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlKill.h; sourceTree = "<group>"; };
+		0A841B471740704800220AE6 /* MysqlKill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlKill.m; sourceTree = "<group>"; };
+		0A90C5271737297200AFFFEE /* MysqlSlaveStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlSlaveStatus.h; sourceTree = "<group>"; };
+		0A90C5281737297300AFFFEE /* MysqlSlaveStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlSlaveStatus.m; sourceTree = "<group>"; };
+		0A9C17C417359CA100C04875 /* MysqlCommitException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlCommitException.h; sourceTree = "<group>"; };
+		0A9C17C517359CA100C04875 /* MysqlCommitException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlCommitException.m; sourceTree = "<group>"; };
+		0A9C17C617359CA100C04875 /* MysqlException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlException.h; sourceTree = "<group>"; };
+		0A9C17C717359CA100C04875 /* MysqlException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlException.m; sourceTree = "<group>"; };
+		0A9C17C817359CA100C04875 /* MysqlRollbackException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlRollbackException.h; sourceTree = "<group>"; };
+		0A9C17C917359CA100C04875 /* MysqlRollbackException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlRollbackException.m; sourceTree = "<group>"; };
+		0A9C17CC17359CA100C04875 /* gcc_builtins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcc_builtins.h; sourceTree = "<group>"; };
+		0A9C17CD17359CA100C04875 /* generic-msvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "generic-msvc.h"; sourceTree = "<group>"; };
+		0A9C17CE17359CA100C04875 /* nolock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nolock.h; sourceTree = "<group>"; };
+		0A9C17CF17359CA100C04875 /* rwlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rwlock.h; sourceTree = "<group>"; };
+		0A9C17D017359CA100C04875 /* x86-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "x86-gcc.h"; sourceTree = "<group>"; };
+		0A9C17D117359CA100C04875 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		0A9C17D217359CA100C04875 /* config-win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "config-win.h"; sourceTree = "<group>"; };
+		0A9C17D317359CA100C04875 /* decimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decimal.h; sourceTree = "<group>"; };
+		0A9C17D417359CA100C04875 /* errmsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errmsg.h; sourceTree = "<group>"; };
+		0A9C17D517359CA100C04875 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		0A9C17D617359CA100C04875 /* keycache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keycache.h; sourceTree = "<group>"; };
+		0A9C17D717359CA100C04875 /* lf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lf.h; sourceTree = "<group>"; };
+		0A9C17D817359CA100C04875 /* m_ctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m_ctype.h; sourceTree = "<group>"; };
+		0A9C17D917359CA100C04875 /* m_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m_string.h; sourceTree = "<group>"; };
+		0A9C17DA17359CA100C04875 /* my_aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_aes.h; sourceTree = "<group>"; };
+		0A9C17DB17359CA100C04875 /* my_alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_alarm.h; sourceTree = "<group>"; };
+		0A9C17DC17359CA100C04875 /* my_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_alloc.h; sourceTree = "<group>"; };
+		0A9C17DD17359CA100C04875 /* my_atomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_atomic.h; sourceTree = "<group>"; };
+		0A9C17DE17359CA100C04875 /* my_attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_attribute.h; sourceTree = "<group>"; };
+		0A9C17DF17359CA100C04875 /* my_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_base.h; sourceTree = "<group>"; };
+		0A9C17E017359CA100C04875 /* my_bit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_bit.h; sourceTree = "<group>"; };
+		0A9C17E117359CA100C04875 /* my_bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_bitmap.h; sourceTree = "<group>"; };
+		0A9C17E217359CA100C04875 /* my_charsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_charsets.h; sourceTree = "<group>"; };
+		0A9C17E317359CA100C04875 /* my_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_config.h; sourceTree = "<group>"; };
+		0A9C17E417359CA100C04875 /* my_dbug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_dbug.h; sourceTree = "<group>"; };
+		0A9C17E517359CA100C04875 /* my_dir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_dir.h; sourceTree = "<group>"; };
+		0A9C17E617359CA100C04875 /* my_getopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_getopt.h; sourceTree = "<group>"; };
+		0A9C17E717359CA100C04875 /* my_global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_global.h; sourceTree = "<group>"; };
+		0A9C17E817359CA100C04875 /* my_libwrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_libwrap.h; sourceTree = "<group>"; };
+		0A9C17E917359CA100C04875 /* my_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_list.h; sourceTree = "<group>"; };
+		0A9C17EA17359CA100C04875 /* my_md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_md5.h; sourceTree = "<group>"; };
+		0A9C17EB17359CA100C04875 /* my_net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_net.h; sourceTree = "<group>"; };
+		0A9C17EC17359CA100C04875 /* my_no_pthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_no_pthread.h; sourceTree = "<group>"; };
+		0A9C17ED17359CA100C04875 /* my_nosys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_nosys.h; sourceTree = "<group>"; };
+		0A9C17EE17359CA100C04875 /* my_pthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_pthread.h; sourceTree = "<group>"; };
+		0A9C17EF17359CA100C04875 /* my_stacktrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_stacktrace.h; sourceTree = "<group>"; };
+		0A9C17F017359CA100C04875 /* my_sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_sys.h; sourceTree = "<group>"; };
+		0A9C17F117359CA100C04875 /* my_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_time.h; sourceTree = "<group>"; };
+		0A9C17F217359CA100C04875 /* my_tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_tree.h; sourceTree = "<group>"; };
+		0A9C17F317359CA100C04875 /* my_trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_trie.h; sourceTree = "<group>"; };
+		0A9C17F417359CA100C04875 /* my_uctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_uctype.h; sourceTree = "<group>"; };
+		0A9C17F517359CA100C04875 /* my_vle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_vle.h; sourceTree = "<group>"; };
+		0A9C17F617359CA100C04875 /* my_xml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_xml.h; sourceTree = "<group>"; };
+		0A9C17F717359CA100C04875 /* myisampack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myisampack.h; sourceTree = "<group>"; };
+		0A9C17F817359CA100C04875 /* mysql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql.h; sourceTree = "<group>"; };
+		0A9C17F917359CA100C04875 /* mysql_32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_32.h; sourceTree = "<group>"; };
+		0A9C17FA17359CA100C04875 /* mysql_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_64.h; sourceTree = "<group>"; };
+		0A9C17FB17359CA100C04875 /* mysql_com.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_com.h; sourceTree = "<group>"; };
+		0A9C17FC17359CA100C04875 /* mysql_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_time.h; sourceTree = "<group>"; };
+		0A9C17FD17359CA100C04875 /* mysql_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_version.h; sourceTree = "<group>"; };
+		0A9C17FE17359CA100C04875 /* mysqld_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysqld_error.h; sourceTree = "<group>"; };
+		0A9C180017359CA100C04875 /* rijndael.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rijndael.h; sourceTree = "<group>"; };
+		0A9C180117359CA100C04875 /* mysys_err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysys_err.h; sourceTree = "<group>"; };
+		0A9C180217359CA100C04875 /* queues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queues.h; sourceTree = "<group>"; };
+		0A9C180317359CA100C04875 /* service_versions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_versions.h; sourceTree = "<group>"; };
+		0A9C180417359CA100C04875 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		0A9C180517359CA100C04875 /* sha2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha2.h; sourceTree = "<group>"; };
+		0A9C180617359CA100C04875 /* sql_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sql_common.h; sourceTree = "<group>"; };
+		0A9C180717359CA100C04875 /* sslopt-case.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sslopt-case.h"; sourceTree = "<group>"; };
+		0A9C180817359CA100C04875 /* sslopt-longopts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sslopt-longopts.h"; sourceTree = "<group>"; };
+		0A9C180917359CA100C04875 /* sslopt-vars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sslopt-vars.h"; sourceTree = "<group>"; };
+		0A9C180A17359CA100C04875 /* t_ctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = t_ctype.h; sourceTree = "<group>"; };
+		0A9C180B17359CA100C04875 /* thr_alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thr_alarm.h; sourceTree = "<group>"; };
+		0A9C180C17359CA100C04875 /* thr_lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thr_lock.h; sourceTree = "<group>"; };
+		0A9C180D17359CA100C04875 /* typelib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typelib.h; sourceTree = "<group>"; };
+		0A9C180E17359CA100C04875 /* violite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = violite.h; sourceTree = "<group>"; };
+		0A9C180F17359CA100C04875 /* waiting_threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = waiting_threads.h; sourceTree = "<group>"; };
+		0A9C181017359CA100C04875 /* wqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wqueue.h; sourceTree = "<group>"; };
+		0A9C181317359CA100C04875 /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmysqlclient.a; sourceTree = "<group>"; };
+		0A9C181517359CA100C04875 /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmysqlclient.a; sourceTree = "<group>"; };
+		0A9C181617359CA100C04875 /* MysqlConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlConnection.h; sourceTree = "<group>"; };
+		0A9C181717359CA100C04875 /* MysqlConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlConnection.m; sourceTree = "<group>"; };
+		0A9C181817359CA100C04875 /* MysqlDelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlDelete.h; sourceTree = "<group>"; };
+		0A9C181917359CA100C04875 /* MysqlDelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlDelete.m; sourceTree = "<group>"; };
+		0A9C181A17359CA100C04875 /* MysqlFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlFetch.h; sourceTree = "<group>"; };
+		0A9C181B17359CA100C04875 /* MysqlFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlFetch.m; sourceTree = "<group>"; };
+		0A9C181C17359CA100C04875 /* MysqlFetchField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlFetchField.h; sourceTree = "<group>"; };
+		0A9C181D17359CA100C04875 /* MysqlFetchField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlFetchField.m; sourceTree = "<group>"; };
+		0A9C181E17359CA100C04875 /* MysqlIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlIndex.h; sourceTree = "<group>"; };
+		0A9C181F17359CA100C04875 /* MysqlIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlIndex.m; sourceTree = "<group>"; };
+		0A9C182017359CA100C04875 /* MysqlInsert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlInsert.h; sourceTree = "<group>"; };
+		0A9C182117359CA100C04875 /* MysqlInsert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlInsert.m; sourceTree = "<group>"; };
+		0A9C182217359CA100C04875 /* MysqlLiteral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlLiteral.h; sourceTree = "<group>"; };
+		0A9C182317359CA100C04875 /* MysqlLiteral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlLiteral.m; sourceTree = "<group>"; };
+		0A9C182417359CA100C04875 /* MysqlServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlServer.h; sourceTree = "<group>"; };
+		0A9C182517359CA100C04875 /* MysqlServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlServer.m; sourceTree = "<group>"; };
+		0A9C182617359CA100C04875 /* MysqlTruncate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlTruncate.h; sourceTree = "<group>"; };
+		0A9C182717359CA100C04875 /* MysqlTruncate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlTruncate.m; sourceTree = "<group>"; };
+		0A9C182817359CA100C04875 /* MysqlUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MysqlUpdate.h; sourceTree = "<group>"; };
+		0A9C182917359CA100C04875 /* MysqlUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MysqlUpdate.m; sourceTree = "<group>"; };
+		0A9C182B17359CA100C04875 /* NSString+MysqlEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MysqlEscape.h"; sourceTree = "<group>"; };
+		0A9C182C17359CA100C04875 /* NSString+MysqlEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MysqlEscape.m"; sourceTree = "<group>"; };
+		0AD9E5D01759182800AF0E5A /* General.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = General.h; sourceTree = "<group>"; };
+		0AD9E5D11759182800AF0E5A /* General.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = General.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A58406D1713230B002B31E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5840741713230B002B31E1 /* Cocoa.framework in Frameworks */,
+				0A66D00017359F0D00F0DC46 /* libmysqlclient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A3B732E175BC505001D8C74 /* help */ = {
+			isa = PBXGroup;
+			children = (
+				0A3B732F175BC505001D8C74 /* add_new_host.png */,
+				0A3B7330175BC505001D8C74 /* add_pool.png */,
+				0A3B7331175BC505001D8C74 /* aliases_set.png */,
+				0A3B7332175BC505001D8C74 /* config_completed_logview.png */,
+				0A3B7333175BC505001D8C74 /* Config_menu.png */,
+				0A3B7334175BC505001D8C74 /* configuration.html */,
+				0A3B7335175BC505001D8C74 /* detail_selector.png */,
+				0A3B7336175BC505001D8C74 /* details_pane_with_data.png */,
+				0A3B7337175BC505001D8C74 /* done_editing.png */,
+				0A3B7338175BC505001D8C74 /* empty_config_pane.png */,
+				0A3B7339175BC505001D8C74 /* eventlog.html */,
+				0A3B733A175BC505001D8C74 /* hostname_entered.png */,
+				0A3B733B175BC505001D8C74 /* hosts_active.png */,
+				0A3B733C175BC505001D8C74 /* hosts_entered.png */,
+				0A3B733D175BC505001D8C74 /* index.html */,
+				0A3B733E175BC505001D8C74 /* information_entered.png */,
+				0A3B733F175BC505001D8C74 /* kill_button.png */,
+				0A3B7340175BC505001D8C74 /* kill_confirm.png */,
+				0A3B7341175BC505001D8C74 /* log_entries_colors.png */,
+				0A3B7342175BC505001D8C74 /* log_view_selected.png */,
+				0A3B7343175BC505001D8C74 /* new_file.png */,
+				0A3B7344175BC505001D8C74 /* new_pool_selected.png */,
+				0A3B7345175BC505001D8C74 /* password_wrong.png */,
+				0A3B7346175BC505001D8C74 /* primary_event_log.png */,
+				0A3B7347175BC505001D8C74 /* replication_view.png */,
+				0A3B7348175BC505001D8C74 /* save_screen.png */,
+				0A3B7349175BC505001D8C74 /* select_status_view.png */,
+				0A3B734A175BC505001D8C74 /* selector_open.png */,
+				0A3B734B175BC505001D8C74 /* single_status_view_line.png */,
+				0A3B734C175BC505001D8C74 /* slaves_active.png */,
+				0A3B734D175BC505001D8C74 /* startup.png */,
+				0A3B734E175BC505001D8C74 /* status_view_screenshot.png */,
+				0A3B734F175BC505001D8C74 /* statusview.html */,
+				0A3B7350175BC505001D8C74 /* track_queries_forever.png */,
+				0A3B7351175BC505001D8C74 /* track_query_timer.png */,
+				0A3B7352175BC505001D8C74 /* tracker_config.png */,
+			);
+			path = help;
+			sourceTree = "<group>";
+		};
+		0A5840671713230B002B31E1 = {
+			isa = PBXGroup;
+			children = (
+				0A3B7377175BC619001D8C74 /* WebKit.framework */,
+				0A5840791713230B002B31E1 /* DB Monitor */,
+				0A5840721713230B002B31E1 /* Frameworks */,
+				0A5840711713230B002B31E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A5840711713230B002B31E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A5840701713230B002B31E1 /* DB Monitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A5840721713230B002B31E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A5840731713230B002B31E1 /* Cocoa.framework */,
+				0A5840751713230B002B31E1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A5840751713230B002B31E1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A5840761713230B002B31E1 /* AppKit.framework */,
+				0A5840771713230B002B31E1 /* CoreData.framework */,
+				0A5840781713230B002B31E1 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0A5840791713230B002B31E1 /* DB Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				0A21B48F17353FD200F755D0 /* TODO */,
+				0A3B732E175BC505001D8C74 /* help */,
+				0A9C17C217359CA100C04875 /* MySQL Library */,
+				0AD9E5D01759182800AF0E5A /* General.h */,
+				0AD9E5D11759182800AF0E5A /* General.m */,
+				0A841B40173C810F00220AE6 /* Pool.h */,
+				0A841B41173C810F00220AE6 /* Pool.m */,
+				0A841B3D173C810F00220AE6 /* MySQLHost.h */,
+				0A841B3E173C810F00220AE6 /* MySQLHost.m */,
+				0A5840851713230B002B31E1 /* DBMDocument.h */,
+				0A5840861713230B002B31E1 /* DBMDocument.m */,
+				0A5840881713230B002B31E1 /* DBMDocument.xib */,
+				0A702C74172CB3F700CC9C82 /* DBMLogEntry.h */,
+				0A702C75172CB3F700CC9C82 /* DBMLogEntry.m */,
+				0A21AA6E17515CF300BEDCAA /* DBMDetailEntry.h */,
+				0A21AA6F17515CF300BEDCAA /* DBMDetailEntry.m */,
+				0A58408B1713230B002B31E1 /* MainMenu.xib */,
+				0A58407A1713230B002B31E1 /* Supporting Files */,
+			);
+			path = "DB Monitor";
+			sourceTree = "<group>";
+		};
+		0A58407A1713230B002B31E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A58408E1713230B002B31E1 /* DBMDocument.xcdatamodeld */,
+				0A58410A17132414002B31E1 /* DB Monitor.entitlements */,
+				0A5841081713238C002B31E1 /* search.icns */,
+				0A58407B1713230B002B31E1 /* DB Monitor-Info.plist */,
+				0A58407C1713230B002B31E1 /* InfoPlist.strings */,
+				0A58407F1713230B002B31E1 /* main.m */,
+				0A5840811713230B002B31E1 /* DB Monitor-Prefix.pch */,
+				0A5840821713230B002B31E1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A9C17C217359CA100C04875 /* MySQL Library */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C17C317359CA100C04875 /* Exceptions */,
+				0A9C17CA17359CA100C04875 /* include */,
+				0A9C181117359CA100C04875 /* lib */,
+				0A9C181617359CA100C04875 /* MysqlConnection.h */,
+				0A9C181717359CA100C04875 /* MysqlConnection.m */,
+				0A9C181817359CA100C04875 /* MysqlDelete.h */,
+				0A9C181917359CA100C04875 /* MysqlDelete.m */,
+				0A9C181A17359CA100C04875 /* MysqlFetch.h */,
+				0A9C181B17359CA100C04875 /* MysqlFetch.m */,
+				0A9C181C17359CA100C04875 /* MysqlFetchField.h */,
+				0A9C181D17359CA100C04875 /* MysqlFetchField.m */,
+				0A9C181E17359CA100C04875 /* MysqlIndex.h */,
+				0A9C181F17359CA100C04875 /* MysqlIndex.m */,
+				0A9C182017359CA100C04875 /* MysqlInsert.h */,
+				0A9C182117359CA100C04875 /* MysqlInsert.m */,
+				0A841B461740704800220AE6 /* MysqlKill.h */,
+				0A841B471740704800220AE6 /* MysqlKill.m */,
+				0A9C182217359CA100C04875 /* MysqlLiteral.h */,
+				0A9C182317359CA100C04875 /* MysqlLiteral.m */,
+				0A9C182417359CA100C04875 /* MysqlServer.h */,
+				0A9C182517359CA100C04875 /* MysqlServer.m */,
+				0A90C5271737297200AFFFEE /* MysqlSlaveStatus.h */,
+				0A90C5281737297300AFFFEE /* MysqlSlaveStatus.m */,
+				0A0FF8E017551A4000125BE6 /* MysqlStatus.h */,
+				0A0FF8E117551A4000125BE6 /* MysqlStatus.m */,
+				0A9C182617359CA100C04875 /* MysqlTruncate.h */,
+				0A9C182717359CA100C04875 /* MysqlTruncate.m */,
+				0A9C182817359CA100C04875 /* MysqlUpdate.h */,
+				0A9C182917359CA100C04875 /* MysqlUpdate.m */,
+				0A9C182B17359CA100C04875 /* NSString+MysqlEscape.h */,
+				0A9C182C17359CA100C04875 /* NSString+MysqlEscape.m */,
+			);
+			name = "MySQL Library";
+			path = trunk;
+			sourceTree = "<group>";
+		};
+		0A9C17C317359CA100C04875 /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C17C417359CA100C04875 /* MysqlCommitException.h */,
+				0A9C17C517359CA100C04875 /* MysqlCommitException.m */,
+				0A9C17C617359CA100C04875 /* MysqlException.h */,
+				0A9C17C717359CA100C04875 /* MysqlException.m */,
+				0A9C17C817359CA100C04875 /* MysqlRollbackException.h */,
+				0A9C17C917359CA100C04875 /* MysqlRollbackException.m */,
+			);
+			path = Exceptions;
+			sourceTree = "<group>";
+		};
+		0A9C17CA17359CA100C04875 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C17CB17359CA100C04875 /* atomic */,
+				0A9C17D117359CA100C04875 /* base64.h */,
+				0A9C17D217359CA100C04875 /* config-win.h */,
+				0A9C17D317359CA100C04875 /* decimal.h */,
+				0A9C17D417359CA100C04875 /* errmsg.h */,
+				0A9C17D517359CA100C04875 /* hash.h */,
+				0A9C17D617359CA100C04875 /* keycache.h */,
+				0A9C17D717359CA100C04875 /* lf.h */,
+				0A9C17D817359CA100C04875 /* m_ctype.h */,
+				0A9C17D917359CA100C04875 /* m_string.h */,
+				0A9C17DA17359CA100C04875 /* my_aes.h */,
+				0A9C17DB17359CA100C04875 /* my_alarm.h */,
+				0A9C17DC17359CA100C04875 /* my_alloc.h */,
+				0A9C17DD17359CA100C04875 /* my_atomic.h */,
+				0A9C17DE17359CA100C04875 /* my_attribute.h */,
+				0A9C17DF17359CA100C04875 /* my_base.h */,
+				0A9C17E017359CA100C04875 /* my_bit.h */,
+				0A9C17E117359CA100C04875 /* my_bitmap.h */,
+				0A9C17E217359CA100C04875 /* my_charsets.h */,
+				0A9C17E317359CA100C04875 /* my_config.h */,
+				0A9C17E417359CA100C04875 /* my_dbug.h */,
+				0A9C17E517359CA100C04875 /* my_dir.h */,
+				0A9C17E617359CA100C04875 /* my_getopt.h */,
+				0A9C17E717359CA100C04875 /* my_global.h */,
+				0A9C17E817359CA100C04875 /* my_libwrap.h */,
+				0A9C17E917359CA100C04875 /* my_list.h */,
+				0A9C17EA17359CA100C04875 /* my_md5.h */,
+				0A9C17EB17359CA100C04875 /* my_net.h */,
+				0A9C17EC17359CA100C04875 /* my_no_pthread.h */,
+				0A9C17ED17359CA100C04875 /* my_nosys.h */,
+				0A9C17EE17359CA100C04875 /* my_pthread.h */,
+				0A9C17EF17359CA100C04875 /* my_stacktrace.h */,
+				0A9C17F017359CA100C04875 /* my_sys.h */,
+				0A9C17F117359CA100C04875 /* my_time.h */,
+				0A9C17F217359CA100C04875 /* my_tree.h */,
+				0A9C17F317359CA100C04875 /* my_trie.h */,
+				0A9C17F417359CA100C04875 /* my_uctype.h */,
+				0A9C17F517359CA100C04875 /* my_vle.h */,
+				0A9C17F617359CA100C04875 /* my_xml.h */,
+				0A9C17F717359CA100C04875 /* myisampack.h */,
+				0A9C17F817359CA100C04875 /* mysql.h */,
+				0A9C17F917359CA100C04875 /* mysql_32.h */,
+				0A9C17FA17359CA100C04875 /* mysql_64.h */,
+				0A9C17FB17359CA100C04875 /* mysql_com.h */,
+				0A9C17FC17359CA100C04875 /* mysql_time.h */,
+				0A9C17FD17359CA100C04875 /* mysql_version.h */,
+				0A9C17FE17359CA100C04875 /* mysqld_error.h */,
+				0A9C17FF17359CA100C04875 /* mysys */,
+				0A9C180117359CA100C04875 /* mysys_err.h */,
+				0A9C180217359CA100C04875 /* queues.h */,
+				0A9C180317359CA100C04875 /* service_versions.h */,
+				0A9C180417359CA100C04875 /* sha1.h */,
+				0A9C180517359CA100C04875 /* sha2.h */,
+				0A9C180617359CA100C04875 /* sql_common.h */,
+				0A9C180717359CA100C04875 /* sslopt-case.h */,
+				0A9C180817359CA100C04875 /* sslopt-longopts.h */,
+				0A9C180917359CA100C04875 /* sslopt-vars.h */,
+				0A9C180A17359CA100C04875 /* t_ctype.h */,
+				0A9C180B17359CA100C04875 /* thr_alarm.h */,
+				0A9C180C17359CA100C04875 /* thr_lock.h */,
+				0A9C180D17359CA100C04875 /* typelib.h */,
+				0A9C180E17359CA100C04875 /* violite.h */,
+				0A9C180F17359CA100C04875 /* waiting_threads.h */,
+				0A9C181017359CA100C04875 /* wqueue.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0A9C17CB17359CA100C04875 /* atomic */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C17CC17359CA100C04875 /* gcc_builtins.h */,
+				0A9C17CD17359CA100C04875 /* generic-msvc.h */,
+				0A9C17CE17359CA100C04875 /* nolock.h */,
+				0A9C17CF17359CA100C04875 /* rwlock.h */,
+				0A9C17D017359CA100C04875 /* x86-gcc.h */,
+			);
+			path = atomic;
+			sourceTree = "<group>";
+		};
+		0A9C17FF17359CA100C04875 /* mysys */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C180017359CA100C04875 /* rijndael.h */,
+			);
+			path = mysys;
+			sourceTree = "<group>";
+		};
+		0A9C181117359CA100C04875 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C181217359CA100C04875 /* iOS */,
+				0A9C181417359CA100C04875 /* OSX */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		0A9C181217359CA100C04875 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C181317359CA100C04875 /* libmysqlclient.a */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		0A9C181417359CA100C04875 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C181517359CA100C04875 /* libmysqlclient.a */,
+			);
+			path = OSX;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A58406F1713230B002B31E1 /* DB Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A5840931713230B002B31E1 /* Build configuration list for PBXNativeTarget "DB Monitor" */;
+			buildPhases = (
+				0A58406C1713230B002B31E1 /* Sources */,
+				0A58406D1713230B002B31E1 /* Frameworks */,
+				0A58406E1713230B002B31E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DB Monitor";
+			productName = "DB Monitor";
+			productReference = 0A5840701713230B002B31E1 /* DB Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A5840681713230B002B31E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DBM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = mandrake;
+			};
+			buildConfigurationList = 0A58406B1713230B002B31E1 /* Build configuration list for PBXProject "DB Monitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 0A5840671713230B002B31E1;
+			productRefGroup = 0A5840711713230B002B31E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A58406F1713230B002B31E1 /* DB Monitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A58406E1713230B002B31E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A58407E1713230B002B31E1 /* InfoPlist.strings in Resources */,
+				0A5840841713230B002B31E1 /* Credits.rtf in Resources */,
+				0A58408A1713230B002B31E1 /* DBMDocument.xib in Resources */,
+				0A58408D1713230B002B31E1 /* MainMenu.xib in Resources */,
+				0A5841091713238C002B31E1 /* search.icns in Resources */,
+				0A21B49017353FD200F755D0 /* TODO in Resources */,
+				0A3B7353175BC505001D8C74 /* add_new_host.png in Resources */,
+				0A3B7354175BC505001D8C74 /* add_pool.png in Resources */,
+				0A3B7355175BC505001D8C74 /* aliases_set.png in Resources */,
+				0A3B7356175BC505001D8C74 /* config_completed_logview.png in Resources */,
+				0A3B7357175BC505001D8C74 /* Config_menu.png in Resources */,
+				0A3B7358175BC505001D8C74 /* configuration.html in Resources */,
+				0A3B7359175BC505001D8C74 /* detail_selector.png in Resources */,
+				0A3B735A175BC505001D8C74 /* details_pane_with_data.png in Resources */,
+				0A3B735B175BC505001D8C74 /* done_editing.png in Resources */,
+				0A3B735C175BC505001D8C74 /* empty_config_pane.png in Resources */,
+				0A3B735D175BC505001D8C74 /* eventlog.html in Resources */,
+				0A3B735E175BC505001D8C74 /* hostname_entered.png in Resources */,
+				0A3B735F175BC505001D8C74 /* hosts_active.png in Resources */,
+				0A3B7360175BC505001D8C74 /* hosts_entered.png in Resources */,
+				0A3B7361175BC505001D8C74 /* index.html in Resources */,
+				0A3B7362175BC505001D8C74 /* information_entered.png in Resources */,
+				0A3B7363175BC505001D8C74 /* kill_button.png in Resources */,
+				0A3B7364175BC505001D8C74 /* kill_confirm.png in Resources */,
+				0A3B7365175BC505001D8C74 /* log_entries_colors.png in Resources */,
+				0A3B7366175BC505001D8C74 /* log_view_selected.png in Resources */,
+				0A3B7367175BC505001D8C74 /* new_file.png in Resources */,
+				0A3B7368175BC505001D8C74 /* new_pool_selected.png in Resources */,
+				0A3B7369175BC505001D8C74 /* password_wrong.png in Resources */,
+				0A3B736A175BC505001D8C74 /* primary_event_log.png in Resources */,
+				0A3B736B175BC505001D8C74 /* replication_view.png in Resources */,
+				0A3B736C175BC505001D8C74 /* save_screen.png in Resources */,
+				0A3B736D175BC505001D8C74 /* select_status_view.png in Resources */,
+				0A3B736E175BC505001D8C74 /* selector_open.png in Resources */,
+				0A3B736F175BC505001D8C74 /* single_status_view_line.png in Resources */,
+				0A3B7370175BC505001D8C74 /* slaves_active.png in Resources */,
+				0A3B7371175BC505001D8C74 /* startup.png in Resources */,
+				0A3B7372175BC505001D8C74 /* status_view_screenshot.png in Resources */,
+				0A3B7373175BC505001D8C74 /* statusview.html in Resources */,
+				0A3B7374175BC505001D8C74 /* track_queries_forever.png in Resources */,
+				0A3B7375175BC505001D8C74 /* track_query_timer.png in Resources */,
+				0A3B7376175BC505001D8C74 /* tracker_config.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A58406C1713230B002B31E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5840801713230B002B31E1 /* main.m in Sources */,
+				0A5840871713230B002B31E1 /* DBMDocument.m in Sources */,
+				0A5840901713230B002B31E1 /* DBMDocument.xcdatamodeld in Sources */,
+				0A702C76172CB3F700CC9C82 /* DBMLogEntry.m in Sources */,
+				0A9C182D17359CA100C04875 /* MysqlCommitException.m in Sources */,
+				0A9C182E17359CA100C04875 /* MysqlException.m in Sources */,
+				0A9C182F17359CA100C04875 /* MysqlRollbackException.m in Sources */,
+				0A9C183217359CA100C04875 /* MysqlConnection.m in Sources */,
+				0A9C183317359CA100C04875 /* MysqlDelete.m in Sources */,
+				0A9C183417359CA100C04875 /* MysqlFetch.m in Sources */,
+				0A9C183517359CA100C04875 /* MysqlFetchField.m in Sources */,
+				0A9C183617359CA100C04875 /* MysqlIndex.m in Sources */,
+				0A9C183717359CA100C04875 /* MysqlInsert.m in Sources */,
+				0A9C183817359CA100C04875 /* MysqlLiteral.m in Sources */,
+				0A9C183917359CA100C04875 /* MysqlServer.m in Sources */,
+				0A9C183A17359CA100C04875 /* MysqlTruncate.m in Sources */,
+				0A9C183B17359CA100C04875 /* MysqlUpdate.m in Sources */,
+				0A9C183D17359CA100C04875 /* NSString+MysqlEscape.m in Sources */,
+				0A90C5291737297300AFFFEE /* MysqlSlaveStatus.m in Sources */,
+				0A841B3F173C810F00220AE6 /* MySQLHost.m in Sources */,
+				0A841B42173C810F00220AE6 /* Pool.m in Sources */,
+				0A841B481740704800220AE6 /* MysqlKill.m in Sources */,
+				0A21AA7017515CF300BEDCAA /* DBMDetailEntry.m in Sources */,
+				0A0FF8E217551A4000125BE6 /* MysqlStatus.m in Sources */,
+				0AD9E5D21759182800AF0E5A /* General.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A58407C1713230B002B31E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A58407D1713230B002B31E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A5840821713230B002B31E1 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A5840831713230B002B31E1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0A5840881713230B002B31E1 /* DBMDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A5840891713230B002B31E1 /* en */,
+			);
+			name = DBMDocument.xib;
+			sourceTree = "<group>";
+		};
+		0A58408B1713230B002B31E1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A58408C1713230B002B31E1 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A5840911713230B002B31E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0A5840921713230B002B31E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0A5840941713230B002B31E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "DB Monitor/DB Monitor.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DB Monitor/DB Monitor-Prefix.pch";
+				INFOPLIST_FILE = "DB Monitor/DB Monitor-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/DB Monitor/trunk/lib/OSX\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0A5840951713230B002B31E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "DB Monitor/DB Monitor.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DB Monitor/DB Monitor-Prefix.pch";
+				INFOPLIST_FILE = "DB Monitor/DB Monitor-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/DB Monitor/trunk/lib/OSX\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A58406B1713230B002B31E1 /* Build configuration list for PBXProject "DB Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A5840911713230B002B31E1 /* Debug */,
+				0A5840921713230B002B31E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A5840931713230B002B31E1 /* Build configuration list for PBXNativeTarget "DB Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A5840941713230B002B31E1 /* Debug */,
+				0A5840951713230B002B31E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0A58408E1713230B002B31E1 /* DBMDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0A58408F1713230B002B31E1 /* DBMDocument.xcdatamodel */,
+			);
+			currentVersion = 0A58408F1713230B002B31E1 /* DBMDocument.xcdatamodel */;
+			path = DBMDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0A5840681713230B002B31E1 /* Project object */;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DB Monitor Configuration</title>
+<style type="text/css">
+<!--
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.oneColElsCtr #container {
+	width: 46em;
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColElsCtr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+}
+-->
+</style></head>
+
+<body class="oneColElsCtr">
+
+<div id="container">
+  <div id="mainContent">
+    <h1>DB Monitor Configuration</h1>
+    <p> Getting started with DB Monitor is simple! <br/>
+      <br/>
+      When first first launched you should see a window that looks like this: <br/>
+      <br/>
+      <img src="startup.png" alt="Startup" width="687" height="454" border="0"/> <br/>
+      <br/>
+      If you don't see one, don't panic.  Simple select File-&gt;New from the Application Menu: <br/>
+  <br/>
+  <center><img src="new_file.png" alt="New File" width="440" height="213" border="0"/></center> <br/>
+  <br/>
+      To Edit the configuration, simply hit Command-, or select the Document-&gt;Configure Pools option from the Application Menu: <br/>
+  <br/>
+  <center><img src="Config_menu.png" alt="Configuration Menu" width="457" height="95" border="0"/></center> <br/>
+  <br/>
+      This will bring up the configuration pane, which will look like this:</p>
+    <p> <img src="empty_config_pane.png" alt="Empty Config Panel" width="690" height="510" border="0"/> <br/>
+      <br/>
+    Our first step will be to create a new pool to hold a group of servers.  On the left hand side of the panel, you should see a Pools list.  Click the plus sign in the bottom right hand corner to add a new pool:</p>
+    <p> <center><img src="add_pool.png" alt="Adding a new Pool" width="172" height="420" border="0" /></center></p>
+    <p><br/>
+      This will add a new pool to be edited to your configuration which should be automatically selected by default: <br/>
+  <br/>
+  <center><img src="new_pool_selected.png" alt="New Pool Selected" width="499" height="394" border="0"/> </center><br/>
+  <br/>
+      You can name the pool by simply typing into the column on the left OR by typing into the text entry box just to it's right. <br/>
+  <br/>
+      A pool of servers is a group of hosts that perform a similar function, and use the same username/password to log into them.  Your cluster may only have one master and one group of slaves, and you may only need a single pool to describe your infrastructure.  Or you may have several projects, each with its own master and set of slaves.  I find it is good to group systems into pools by master, myself.  You may make pools for dev, qa, staging, production, etc - or you can separate them into individual documents so you can have multiple windows open showing different clusters or systems, it's entirely up to you! <br/>
+  <br/>
+      Let's go ahead and enter a username and password combination to log into this pool of systems now: <br/>
+  <br/>
+  <img src="information_entered.png" alt="Information Entered" width="680" height="228" border="0"/> <br/>
+  <br/>
+      Next as you can see it has automatically filled out two numbers.  The first is 'Show Query After' and the second is 'Track Query After'. <br/>
+  <br/>
+      The first number tells the application how many seconds to wait for a query to run before you want to display it in the event log.  Showing a query doesn't mean that you necessarily want to track more information about that query, only that you are interested in seeing it displayed in the log at runtime (default value is 1 second). <br/>
+  <br/>
+      The second number tells the application how many seconds is too long for a query to run.  Once a running query has been running for that amount of time (default value is 5 seconds) it highlights the query in red in the event log.  If you have Query Tracking enabled it will also leave that query in the event log, even after it has stopped running for inspection later.  We'll look at Query Tracking more when we go over the Event Log Viewer. <br/>
+  <br/>
+      Now we're ready to add some hosts to our pool!  Start by clicking the plus sign at the bottom right hand corner of the lower table: <br/>
+  <br/>
+  <center><img src="add_new_host.png" alt="Adding a new Host" width="521" height="160" border="0"/> </center><br/>
+  <br/>
+      Once you've done that, just select the text area under Hostname and start typing.  It will fill out the Port column to 3306 by default for MySQL, but you can edit that also. <br/>
+  <br/>
+  <center><img src="hostname_entered.png" alt="Hostname Entered" width="526" height="160" border="0"/></center> <br/>
+  <br/>
+      Rinse and repeat until you've added all of the hosts that you want to put in this pool: <br/>
+  <br/>
+  <center><img src="hosts_entered.png" alt="Hosts Entered" width="527" height="162" border="0"/></center> <br/>
+  <br/>
+      But wait!  If we were to hit the Done button now, nothing would show up in our event logs, because we've set no pools or hosts to active!  Setting hosts or pools to Active/Inactive is a very useful way to filter out host information that you aren't interested in if you need to quickly drill down into a host or pool in order to get a better idea of what is going on.  It's also a good way to filter OUT a spammy host that is having problems.  Let's check off Active for all of the hosts we've entered now: <br/>
+  <br/>
+  <img src="hosts_active.png" alt="Hosts Active" width="683" height="402" border="0"/> <br/>
+  <br/>
+      We did put some replicated slaves in the list, so we should probably check them off as slaves also so we gather slave statistics: <br/>
+  <br/>
+  <center><img src="slaves_active.png" alt="Slaves Active" width="526" height="164" border="0"/></center> <br/>
+  <br/>
+      But we've skipped a whole column!  There's an Alias column that you can put a text string into if your host names are very long or you need to put a FQDN in so that your hosts resolve properly.  Or, if you have several MySQL servers that are running off different ports (or you're doing port forwarding across an SSH tunnel).  Let's pretend that my hostnames need FQDN so I'm going to enter some short names for them.  Unlike host names, I can put as many spaces in the Aliases as I'd like: <br/>
+  <br/>
+  <center><img src="aliases_set.png" alt="Setting Host Aliases" width="530" height="164" border="0"/></center> <br/>
+  <br/>
+      Now we're done configuring our first pool!  Simply hit the Done button in order to return to the event Screen! <br/>
+  <br/>
+  <img src="done_editing.png" alt="Done Editing" width="686" height="463" border="0"/> <br/>
+  <br/>
+      You'll know you've probably entered something wrong if you immediately see a screen like this once you exit out, make sure you've entered your username and password correctly! <br/>
+  <br/>
+  <img src="password_wrong.png" alt="Password was Incorrect" width="678" height="103" border="0"/> <br/>
+  <br/>
+      And make sure to save your document by hitting Command-S or selecting File-&gt;Save from the Application Menu! <br/>
+  <br/>
+  <center><img src="save_screen.png" alt="Save Screen" width="432" height="163" border="0"/></center> </p>
+	<!-- end #mainContent --></div>
+<!-- end #container --></div>
+</body>
+</html>

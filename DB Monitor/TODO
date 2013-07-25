@@ -1,0 +1,16 @@
+General Features:
+1.0 Complete!
+
+***** 1.1 and beyond: *****
+
+MySQL/MariaDB features:
+* SSL support
+
+Other Systems to implement:
+* hbase support
+* hadoop m/r jobs support
+* mongoDB support
+* MSSQL support
+* oracle support
+* memcache support
+* redis support

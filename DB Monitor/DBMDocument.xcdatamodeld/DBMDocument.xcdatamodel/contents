@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="General" representedClassName="General" syncable="YES">
+        <attribute name="trackEnabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="trackTimer" optional="YES" attributeType="Integer 16" minValueString="0" maxValueString="300" defaultValueString="60" syncable="YES"/>
+    </entity>
+    <entity name="MySQLHost" representedClassName="MySQLHost" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="alias" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hostname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="port" optional="YES" attributeType="Integer 16" defaultValueString="3306" syncable="YES"/>
+        <attribute name="slave" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="pool" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Pool" inverseName="mysqlhosts" inverseEntity="Pool" syncable="YES"/>
+    </entity>
+    <entity name="Pool" representedClassName="Pool" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hostType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="monitorTimer" optional="YES" attributeType="Integer 16" defaultValueString="1" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="triggerTimer" optional="YES" attributeType="Integer 16" defaultValueString="5" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="mysqlhosts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MySQLHost" inverseName="pool" inverseEntity="MySQLHost" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MySQLHost" positionX="171" positionY="-423" width="128" height="135"/>
+        <element name="Pool" positionX="-47" positionY="-402" width="128" height="165"/>
+        <element name="General" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
+</model>

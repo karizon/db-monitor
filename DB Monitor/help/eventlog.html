@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Using the Event Log</title>
+<style type="text/css">
+<!--
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.oneColElsCtr #container {
+	width: 46em;
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColElsCtr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+}
+-->
+</style></head>
+
+<body class="oneColElsCtr">
+
+<div id="container">
+  <div id="mainContent">
+    <h1>Using the Event Log Viewer</h1>
+    <p>Once you have completed the <a href="configuration.html">configuration</a> of at least one pool and set something to active, you can immediately begin using the main log viewer.</p>
+    <p>Once you've loaded the log viewer, you should see a screen that looks something like this:</p>
+    <p><img src="config_completed_logview.png" width="670" height="495" alt="Log Viewer" /></p>
+    <p>Let's break down this screen into its individual components:</p>
+
+    <ol>
+   	  <li>The Tracking Bar: a simple way to configure how long you want to keep tracked queries around.<br/>
+   	    <img src="tracker_config.png" width="580" height="49" alt="Tracking Bar" /></li>
+      <li>The Details Pane: a place to inspect (and potentially kill) queries that are running on your cluster.<br/>
+      <img src="detail_selector.png" width="100" height="242" alt="Details Pane" /></li>
+      <li>The Event Log Window: The Main Event - where all of the log entries are displayed for you to browse.<br/>
+      <img src="primary_event_log.png" width="589" height="50" alt="Event Log" /></li>
+    </ol>
+    <h2>Using the Event Log</h2>
+    <p>Let's start with the meat and potatoes: the Event Log Window. Mostly self explanitory. There is a timestamp, the duration of the event that you're watching, the hostname (or host alias, in this case), and the message string that goes along with that log entry. </p>
+    <p><img src="log_view_selected.png" width="666" height="42" alt="Log View Selected" /></p>
+    <p><img src="details_pane_with_data.png" alt="Details Pane - Query" width="125" height="340" hspace="10" vspace="10" align="left" /></p>
+    <p>We can see in the message for a slow query (This one happened at 22:44:13 and lasted for 7 seconds) that on host slave 2, running from XXX host (I've obscured it in this screenshot) on port 41906, that a select query maybe wasn't the most optimized in the world. If you select the query (even if it has turned gray, more on that later) you can then see information about it pop up in the details pane.    </p>
+    <p>Here we can get some information on how many rows it read, what the process id was, what user and database it was on, what host it was from, and the full text of the query. Though obscured, you can see that this one is a pretty long query, and form the State it was in during the last snapshot, it had to create a temporary table, and it had to read over 10 million rows. No wonder it took so long! Well, now we have a query from our production infrastructure that we should potentially investigate to see about optimizing!    </p>
+    <p>Now, in this specific example the item has turned gray. This<img src="track_query_timer.png" alt="Track Timer Config" width="256" height="129" hspace="10" vspace="10" align="right" /> means that it has been selected to be tracked by the application. There are three colors that you might see in your Log Events screen. The normal color is black. Black means that it's worth displaying because it's passed the display threshold (default is 1 second). Red means that it has passed the tracking threshold and it is still active (default tracking threshold is 5 seconds).  These values are configured in the <a href="configuration.html">configuration panel</a>.  The final color that it
+      <!-- end #mainContent -->
+    can turn is gray. Items turn gray once they have passed the tracked query threshold, and are kept around for a period of time that you define using the Tracking Bar at the bottom of the window. You can keep queries around indefinitely by checking the box on the left (to enable query tracking) and then dragging the slider all the way to the right (until it says ∞ Seconds). You can select between 0 and 300 seconds for keeping queries around. Dragging to 300 seconds is equivalent to keeping it around indefinitely until you decide to dismiss the log entry.<img src="track_queries_forever.png" alt="∞ Seconds" width="675" height="55" hspace="10" vspace="10" /></p>
+    <h2>Killing Queries</h2>
+    <p>One common usage of DB Monitor is to take a look at your runtime environment and attempt to discover things that are causing your system to misbehave. Whether it is locking tables, using excessive resources, or just generally misbehaving (Who is writing that 800 million row temporary table?), eventually you're going to have a process you're going to want to kill. It couldn't be easier to kill a process in DB Monitor. All you need to do is to highlight the process you would like to terminate and select the 'Kill Selected Process' button in the lower right hand corner. (Or, you can use the keyboard shortcut pressing the 'Backspace' key on your keyboard!)</p>
+    <p><center> <img src="kill_button.png" alt="Kill Button" width="440" height="450" /></center></p>
+    <p>If you've selected the wrong process, have no fear, it does pop up a confirmation dialog box, and it will allow you to make sure that your finger didn't slip on the button or you didn't misclick the wrong process before you kill it. Check the details box first!</p>
+    <p><center><img src="kill_confirm.png" width="427" height="138" alt="Kill Confirm" /></center></p>
+    <p>That's all there is to it! Note that processes killed in this fashion will terminate on the server, and you cannot take back this action. If you're killing an update or an insert, it is also possible you will also break slave replication.</p>
+    <h2>Removing Dead Entries from the Log</h2>
+    <p>If you have your configuration set to hold tracked queries infinitely (or you have a high timer set) you will come to points where you want to remove an entry that is no longer useful to you from the Event Log view. In order to do this, just select the dead entry that you want to remove, and hit the Kill Selected Process button, just like terminating a process.</p>
+    <p><center><img src="kill_button.png" alt="Kill Button" width="440" height="450" /></center></p>
+
+  It will not pop up a confirmation dialog box, since this isn't actually impacting your runtime environment. If you accidentally removed a process from the log you did not mean to remove, you'll have to wait until the incident repeats itself.</div></div>
+</body>
+</html>

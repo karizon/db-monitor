@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.oneColElsCtr #container {
+	width: 46em;
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColElsCtr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+}
+-->
+</style></head>
+
+<body class="oneColElsCtr">
+
+<div id="container">
+  <div id="mainContent">
+    <h1>Using the MySQL Status Viewer</h1>
+    <p><img src="select_status_view.png" alt="Change to Status View" width="354" height="301" hspace="10" vspace="10" align="right" />The second major screen of the DB Monitor tool is the MySQL Status Viewer. This screen shows you the current status of all of the systems in the clusters configured in your current Document. In order to change to the status viewer, simply click the pop-up menu in the top right hand corner of the window (It will always start with Log View) and select the MySQL Status view from the menu.<img src="selector_open.png" alt="choose MySQL View" width="285" height="106" hspace="10" vspace="10" /> Alternately you can also use the shortcut hotkey of Command-2 (as is listed in the menu).</p>
+    <p>Once you've selected the Status View, you should see a screen that looks something like this:</p>
+    <p><center>
+      <img src="status_view_screenshot.png" width="659" height="508" alt="MySQL Status View" />
+    </center></p>
+    <h2>Status View Line Items</h2>
+    <p>Understanding each status entry is fairly straightforward:</p>
+    <p><center><img src="single_status_view_line.png" alt="Status View Entry" width="661" height="41" hspace="10" vspace="10" /></center></p>
+    <p>We'll break down each element:</p>
+    <ul>
+      <li><b>Host</b>: The hostname or alias of the individual host this entry is referring to.</li>
+      <li><b>Connections</b>: The number of concurrent client connections this server is maintaining.  This can include slave connections.</li>
+      <li><b>Active Queries</b>: The number of queries that aren't part of a slave replication thread that are doing something besides Connecting or Idling currently.</li>
+      <li><b>Reads/sec</b>: The number of reads currently being performed by the InnoDB engine.</li>
+      <li><b>Writes/sec</b>: The number of writes currently being performed by the InnoDB engine.</li>
+      <li><b>Free Pages</b>: The amount of the InnoDB buffer pool currently unallocated (in pages).</li>
+      <li><b>Total Pages</b>: The total amount of the InnoDB buffer pool available to the server (in pages).</li>
+      <li><b>Slow Queries</b>: The number of queries that have taken more than the long_query_time (a server side configuration option).</li>
+    </ul>
+    <h2>Getting Slave Status information:</h2>
+    <p>You can also view information about a running replication slave's status by simply selecting it in the view. Just click any entry and you can see slave status, updated regularly:</p>
+    <p><center><img src="replication_view.png" width="493" height="585" alt="Slave Replication" /></center></p>
+    <p>That's all there is to it!  Now go monitor some servers!</p>
+  <!-- end #mainContent --></div>
+<!-- end #container --></div>
+</body>
+</html>
