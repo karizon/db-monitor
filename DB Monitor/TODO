@@ -1,10 +1,11 @@
-General Features:
-1.0 Complete!
+***** 1.1: *****
 
-***** 1.1 and beyond: *****
+NSView based graphing of connections, memory consumption, slow queries
 
 MySQL/MariaDB features:
 * SSL support
+
+***** 1.2 and beyond *****
 
 Other Systems to implement:
 * hbase support
