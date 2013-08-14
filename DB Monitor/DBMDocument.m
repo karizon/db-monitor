@@ -219,7 +219,7 @@
 }
 
 - (NSBlockOperation *) generateRefreshOperation {
-    __weak __block NSBlockOperation *refreshBlock = [NSBlockOperation blockOperationWithBlock:^ {
+    __block NSBlockOperation *refreshBlock = [NSBlockOperation blockOperationWithBlock:^ {
         if(![refreshBlock isCancelled]) {
             usleep(250000);
             @synchronized(dataList) {
@@ -340,7 +340,7 @@
                 }
             }
             @synchronized(checkQueue) {
-                __weak __block NSOperation *new_operation = [self generateRefreshOperation];
+                __block NSOperation *new_operation = [self generateRefreshOperation];
                 [checkQueue addOperation:new_operation];
             }
         }
@@ -352,7 +352,7 @@
 
 
 - (NSBlockOperation *) generateMySQLOperation:(MySQLHost *) aHost {
-    __weak __block NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^ {
+    __block NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^ {
         if(![operation isCancelled]) {
             // Make sure we mark which elements aren't updated
             [self clearUpdates:aHost];
@@ -374,7 +374,7 @@
             if(![operation isCancelled]) {
                 [[NSOperationQueue mainQueue] addOperationWithBlock:^ {
                     @synchronized(checkQueue) {
-                        __weak __block NSOperation *new_operation = [self generateMySQLOperation:aHost];
+                        __block NSOperation *new_operation = [self generateMySQLOperation:aHost];
                         [checkQueue addOperation:new_operation];
                     }
                 }];
@@ -403,7 +403,7 @@
         exit(1);
     }
     @synchronized(checkQueue) {
-        __weak __block NSBlockOperation *refreshLoop = [self generateRefreshOperation];
+        __block NSBlockOperation *refreshLoop = [self generateRefreshOperation];
         [checkQueue addOperation:refreshLoop];
     }
     
@@ -428,7 +428,7 @@
                 // Sleep between each connection to give us a head start on spacing out updates
                 usleep(5000);
                 @synchronized(checkQueue) {
-                    __weak __block NSOperation *operation = [self generateMySQLOperation:aHost];
+                    __block NSOperation *operation = [self generateMySQLOperation:aHost];
                     [checkQueue addOperation:operation];
                 }
             } else {
