@@ -280,7 +280,7 @@
                     [dataList sortUsingDescriptors:logSortDescriptors];
 
                 }
-                [logView reloadData];
+                [logView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
                 if(selectedEntry) {
                     BOOL found=0;
                     for(int i=0;i<[dataList count];i++) {
@@ -324,7 +324,7 @@
                     if(statusSortDescriptors) {
                         [detailList sortUsingDescriptors:statusSortDescriptors];
                     }
-                    [detailView reloadData];
+                    [detailView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
                     if(selectedEntry) {
                         BOOL found=0;
                         for(int i=0;i<[detailList count];i++) {
@@ -581,7 +581,7 @@
             }
         }
     }
-    [tv reloadData];
+    [tv performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
 }
 
 - (id) tableView: (NSTableView *) tv objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
