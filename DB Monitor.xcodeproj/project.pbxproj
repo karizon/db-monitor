@@ -794,7 +794,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/DB Monitor/trunk/lib/OSX\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -813,7 +813,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/DB Monitor/trunk/lib/OSX\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

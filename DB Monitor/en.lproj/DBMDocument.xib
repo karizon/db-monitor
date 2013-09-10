@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4510" systemVersion="13A569" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1070" identifier="macosx"/>
+        <deployment defaultVersion="1080" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4510"/>
     </dependencies>
     <objects>
@@ -66,7 +66,7 @@
                         </constraints>
                         <popUpButtonCell key="cell" type="push" title="Log View" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="102045" id="102043">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="102044">
                                 <items>
                                     <menuItem title="Log View" state="on" keyEquivalent="1" id="102045"/>
@@ -504,7 +504,7 @@ Gw
                         </constraints>
                         <popUpButtonCell key="cell" type="push" title="MySQL / MariaDB" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="100706" id="100704">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="100705">
                                 <items>
                                     <menuItem title="MySQL / MariaDB" state="on" id="100706"/>
@@ -1579,8 +1579,8 @@ CA
         <customObject id="-3" userLabel="Application"/>
         <arrayController mode="entity" entityName="MySQLHost" automaticallyPreparesContent="YES" id="100285" userLabel="MySQLHosts">
             <connections>
-                <binding destination="100283" name="contentSet" keyPath="selection.mysqlhosts" id="100979"/>
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="100407"/>
+                <binding destination="100283" name="contentSet" keyPath="selection.mysqlhosts" id="100979"/>
             </connections>
         </arrayController>
         <arrayController objectClassName="DBMController" id="100429" userLabel="LogEntry"/>
