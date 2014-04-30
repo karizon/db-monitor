@@ -580,6 +580,11 @@
 				CLASSPREFIX = DBM;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = mandrake;
+				TargetAttributes = {
+					0A58406F1713230B002B31E1 = {
+						DevelopmentTeam = D2FA7YYCVS;
+					};
+				};
 			};
 			buildConfigurationList = 0A58406B1713230B002B31E1 /* Build configuration list for PBXProject "DB Monitor" */;
 			compatibilityVersion = "Xcode 3.2";
