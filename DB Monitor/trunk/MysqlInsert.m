@@ -58,7 +58,7 @@
     [cmd appendFormat:@" ) values ( "];
     
     firstAdd=YES;
-    for (NSString *columnName in keys) {
+    for (NSUInteger x=0; x < keys.count;x++) {
       if (firstAdd) {
         [cmd appendString:@" ? "];
         firstAdd=NO;

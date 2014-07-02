@@ -37,7 +37,8 @@
                           server.port,  // default port
                           NULL,  // default socket
                           server.flags)) {
-    MysqlLog(@"Failed to connect: Error: %s\n",mysql_error(newObject->_connection));
+    [MysqlException raiseConnection:newObject
+                         withFormat:@"Failed to connect: Error: %s\n",mysql_error(newObject->_connection)];
 
     return nil;
   } else {
@@ -52,10 +53,16 @@
 
 + (MysqlConnection *)connectToServers:(NSArray *)arrayOfServers
 {
+  MysqlException *lastException=nil;
   for (MysqlServer *server in arrayOfServers) {
-    MysqlConnection *aConnection=[self connectToServer:server];
-    if (aConnection) return aConnection;
+    @try {
+      MysqlConnection *aConnection=[self connectToServer:server];
+      if (aConnection) return aConnection;
+    } @catch (MysqlException *e) {
+      lastException=e;
+    }
   }
+  if (lastException) @throw lastException;
   return nil;
 }
 
@@ -174,5 +181,6 @@
 - (void) forceDisconnect {
     mysql_close(_connection);
 }
+
 
 @end

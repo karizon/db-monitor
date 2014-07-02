@@ -34,6 +34,7 @@
 @property(readonly) NSString *slaveSQLError;
 @property(readonly) NSString *slaveIOError;
 
+
 // lag
 @property(readonly) NSUInteger masterLogExecPosition;
 @property(readonly) NSInteger secondsBehindMaster;

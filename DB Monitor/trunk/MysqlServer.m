@@ -3,11 +3,15 @@
 //  mysql_connector
 //
 //  Created by Karl Kraft on 3/19/11.
-//  Copyright 2011-2012 Karl Kraft. All rights reserved.
+//  Copyright 2011-2014 Karl Kraft. All rights reserved.
 //
 
 #import "MysqlServer.h"
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wpadded"
+
 #import "mysql.h"
+#pragma clang diagnostic pop
 
 
 @implementation MysqlServer
@@ -22,7 +26,7 @@
   self.host=@"localhost";
   self.user=@"username";
   self.password=@"password";
-  self.schema=@"test";
+  self.schema=nil;
   self.port=3306;
   self.flags=CLIENT_FOUND_ROWS;
   self.connectionTimeout=30;

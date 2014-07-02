@@ -12,14 +12,9 @@
 
 #import "MysqlConnection.h"
 #import "MysqlException.h"
-#import "mysql.h"
 
 
-#ifndef __OBJC_GC__
 #define BLOB_DEFAULT_SIZE 10000
-#else
-#define BLOB_DEFAULT_SIZE 1000000
-#endif
 
 @implementation MysqlFetch
 @synthesize fieldNames;

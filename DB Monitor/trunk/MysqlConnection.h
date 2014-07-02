@@ -3,11 +3,16 @@
 //  mysql_connector
 //
 //  Created by Karl Kraft on 5/21/08.
-//  Copyright 2008-2012 Karl Kraft. All rights reserved.
+//  Copyright 2008-2013 Karl Kraft. All rights reserved.
 //
 
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wpadded"
+
 #import "mysql.h"
+#pragma clang diagnostic pop
+
 
 @class MysqlServer;
 
@@ -36,6 +41,7 @@
 - (void)startIdle;
 
 - (void)forceDisconnect;
+
 
 @end
 

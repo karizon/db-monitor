@@ -3,10 +3,9 @@
 //  mysql_connector
 //
 //  Created by Karl Kraft on 4/25/07.
-//  Copyright 2007-2010 Karl Kraft. All rights reserved.
+//  Copyright 2007-2013 Karl Kraft. All rights reserved.
 //
 
-#import "mysql.h"
 
 @class MysqlConnection;
 
