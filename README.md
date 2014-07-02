@@ -1,4 +1,6 @@
-DB Monitor is an open source MySQL / MariaDB monitoring tool for OS X.  It is licensed under the Apache 2.0 license.
+DB Monitor is an open source MySQL / MariaDB monitoring tool for OS X.  Its primary use is debugging cluster performance across many nodes of MySQL.  It understands database replication, and supports multiple configuration files and multiple windows so you can organize your environment monitoring the way that you find most convenient!
+
+It is licensed under the Apache 2.0 license.
 
 Please feel free to download and contribute to the project!
 
