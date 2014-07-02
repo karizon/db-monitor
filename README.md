@@ -2,7 +2,10 @@ DB Monitor is an open source MySQL / MariaDB monitoring tool for OS X.  Its prim
 
 It is licensed under the Apache 2.0 license.
 
-Please feel free to download and contribute to the project!
+It also uses a modified version of Karl Kraft's fantastic mysql_connector library.  you can find that project here: http://www.karlkraft.com/index.php/2010/06/02/mysql-and-objective-c/
+If you wish to redistribute his library in addition to my work, please contact him directly, my license does not apply to his code though it is included in this repository.
+
+Please feel free to download and contribute to my project!
 
 Let me know if you have any questions!
 
