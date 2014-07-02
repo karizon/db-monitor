@@ -76,6 +76,7 @@
 		0A9C183B17359CA100C04875 /* MysqlUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C182917359CA100C04875 /* MysqlUpdate.m */; };
 		0A9C183D17359CA100C04875 /* NSString+MysqlEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C182C17359CA100C04875 /* NSString+MysqlEscape.m */; };
 		0AD9E5D21759182800AF0E5A /* General.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD9E5D11759182800AF0E5A /* General.m */; };
+		96613B2C196437FE0080A525 /* DBMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96613B2B196437FE0080A525 /* DBMAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -248,6 +249,8 @@
 		0A9C182C17359CA100C04875 /* NSString+MysqlEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MysqlEscape.m"; sourceTree = "<group>"; };
 		0AD9E5D01759182800AF0E5A /* General.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = General.h; sourceTree = "<group>"; };
 		0AD9E5D11759182800AF0E5A /* General.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = General.m; sourceTree = "<group>"; };
+		96613B2A196437FE0080A525 /* DBMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMAppDelegate.h; sourceTree = "<group>"; };
+		96613B2B196437FE0080A525 /* DBMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +365,8 @@
 				0A702C75172CB3F700CC9C82 /* DBMLogEntry.m */,
 				0A21AA6E17515CF300BEDCAA /* DBMDetailEntry.h */,
 				0A21AA6F17515CF300BEDCAA /* DBMDetailEntry.m */,
+				96613B2A196437FE0080A525 /* DBMAppDelegate.h */,
+				96613B2B196437FE0080A525 /* DBMAppDelegate.m */,
 				0A58408B1713230B002B31E1 /* MainMenu.xib */,
 				0A58407A1713230B002B31E1 /* Supporting Files */,
 			);
@@ -673,6 +678,7 @@
 				0A9C183417359CA100C04875 /* MysqlFetch.m in Sources */,
 				0A9C183517359CA100C04875 /* MysqlFetchField.m in Sources */,
 				0A9C183617359CA100C04875 /* MysqlIndex.m in Sources */,
+				96613B2C196437FE0080A525 /* DBMAppDelegate.m in Sources */,
 				0A9C183717359CA100C04875 /* MysqlInsert.m in Sources */,
 				0A9C183817359CA100C04875 /* MysqlLiteral.m in Sources */,
 				0A9C183917359CA100C04875 /* MysqlServer.m in Sources */,
