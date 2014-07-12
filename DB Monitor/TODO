@@ -1,7 +1,5 @@
 ***** 1.0: *****
 
-Fix long running performance issue (app running for 2 days on large server list performance degradation)
-
 ***** 1.1: *****
 
 NSView based graphing of connections, memory consumption, slow queries
