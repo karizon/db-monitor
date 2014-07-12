@@ -204,6 +204,7 @@
             [replicationSecondsBehindMaster setStringValue:@"Slave Unconfigured"];
             [replicationError setString:@"Slave Unconfigured"];
         }
+        
     }
 }
 
@@ -355,7 +356,9 @@
             @synchronized(checkQueue) {
                 __block NSOperation *new_operation = [self generateRefreshOperation];
                 [checkQueue addOperation:new_operation];
+                new_operation = nil;
             }
+            refreshBlock = nil;
         }
     }];
     
@@ -389,10 +392,13 @@
                     @synchronized(checkQueue) {
                         __block NSOperation *new_operation = [self generateMySQLOperation:aHost];
                         [checkQueue addOperation:new_operation];
+                        new_operation = nil;
+
                     }
                 }];
             }
         }
+        operation = nil;
 
     }];
     
@@ -443,6 +449,7 @@
                 @synchronized(checkQueue) {
                     __block NSOperation *operation = [self generateMySQLOperation:aHost];
                     [checkQueue addOperation:operation];
+                    operation = nil;
                 }
             } else {
                 [self clearUpdates:aHost];
