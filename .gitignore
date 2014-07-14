@@ -10,3 +10,5 @@ DB Monitor.xcodeproj/project.xcworkspace/xcuserdata/gharrison.xcuserdatad/UserIn
 DB Monitor.xcodeproj/xcuserdata/gharrison.xcuserdatad/xcschemes/DB Monitor.xcscheme
 
 DB Monitor.xcodeproj/xcuserdata/gharrison.xcuserdatad/xcschemes/xcschememanagement.plist
+
+*.xccheckout
