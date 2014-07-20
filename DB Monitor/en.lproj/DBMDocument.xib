@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1080" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
@@ -52,7 +52,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="133" y="235" width="896" height="618"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
             <value key="minSize" type="size" width="94" height="86"/>
             <view key="contentView" id="6">
                 <rect key="frame" x="0.0" y="0.0" width="896" height="618"/>
@@ -103,7 +103,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="283" y="348" width="720" height="475"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
             <view key="contentView" id="100447">
                 <rect key="frame" x="0.0" y="0.0" width="720" height="475"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -600,7 +600,7 @@ Gw
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="262" y="135" width="896" height="621"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
             <view key="contentView" id="102536">
                 <rect key="frame" x="0.0" y="0.0" width="896" height="621"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -796,7 +796,7 @@ Gw
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="283" y="157" width="896" height="618"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
             <view key="contentView" id="101978">
                 <rect key="frame" x="0.0" y="0.0" width="896" height="618"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -920,7 +920,7 @@ CA
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </box>
-                    <button translatesAutoresizingMaskIntoConstraints="NO" id="101982">
+                    <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="101982">
                         <rect key="frame" x="18" y="20" width="185" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="Keep Tracked Queries for:" bezelStyle="regularSquare" imagePosition="left" refusesFirstResponder="YES" state="on" inset="2" id="101987">
@@ -932,7 +932,7 @@ CA
                         </connections>
                     </button>
                     <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="101983">
-                        <rect key="frame" x="207" y="18" width="393" height="20"/>
+                        <rect key="frame" x="207" y="18" width="393" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="300" doubleValue="296.96969696969694" tickMarkPosition="above" sliderType="linear" id="101986">
                             <connections>
@@ -940,7 +940,7 @@ CA
                             </connections>
                         </sliderCell>
                     </slider>
-                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="101984">
+                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="101984">
                         <rect key="frame" x="604" y="21" width="84" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="XXX Seconds" id="101985">
@@ -975,7 +975,7 @@ CA
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="283" y="348" width="170" height="516"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
             <view key="contentView" id="101344">
                 <rect key="frame" x="0.0" y="0.0" width="170" height="516"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -1001,7 +1001,7 @@ CA
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="283" y="348" width="170" height="488"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
             <view key="contentView" id="101368">
                 <rect key="frame" x="0.0" y="0.0" width="170" height="488"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -1304,7 +1304,7 @@ CA
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="283" y="348" width="170" height="488"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
             <view key="contentView" id="101375">
                 <rect key="frame" x="0.0" y="0.0" width="170" height="488"/>
                 <autoresizingMask key="autoresizingMask"/>
